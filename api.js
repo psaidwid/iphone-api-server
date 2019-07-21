@@ -1,5 +1,9 @@
+const express = require('express');
+const app = express();
+const cookieParser = require('cookie-parser');
+const mysql = require('mysql');
 const passwords = require('./passwords.json');
 
-console.log('This is a test run');
-
-console.log(passwords.mysql);
+var server = app.listen(80, function () {
+   console.log("API Server listening on port "+ server.address().port)
+})
